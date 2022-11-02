@@ -1,0 +1,78 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background: hsl(235, 21%, 11%);
+  color: white;
+}
+
+body a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200pt;
+  position: relative;
+}
+
+.header {
+  background-image: url("../public/images/bg-desktop-dark.jpg");
+}
+.itembox {
+  opacity: 1;
+  transition: "opacity 1s ease-in";
+}
+
+.itembox {
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.itembox:hover {
+  box-shadow: 0 14px 28px rgba(141, 150, 233, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.todo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  height: 40px;
+  position: relative;
+}
+
+.toggle {
+  margin-top: 10px;
+  margin-left: 28%;
+  position: relative;
+  cursor: pointer;
+}
+
+.toCenter {
+  top: 65px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.btn {
+  padding: 3pt;
+  cursor: pointer;
+  margin: auto;
+  color: rgb(85, 93, 100);
+}
+
+.btn:hover {
+  color: white;
+}

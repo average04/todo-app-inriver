@@ -1,0 +1,47 @@
+.round {
+  position: relative;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 23px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 3px;
+  left: 5.5px;
+  opacity: 0;
+  position: absolute;
+  top: 7px;
+  transform: rotate(-45deg);
+  width: 8px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-image: linear-gradient(
+    to right,
+    rgb(125, 89, 252),
+    rgb(101, 63, 241),
+    rgb(129, 7, 167)
+  );
+  border-color: rgb(98, 87, 255);
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}

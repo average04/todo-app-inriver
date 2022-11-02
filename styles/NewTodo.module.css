@@ -1,0 +1,43 @@
+.itemBox {
+  width: 100%;
+  height: 40pt;
+  border-width: thin;
+  border-radius: 4pt;
+  padding: 10px;
+  border-color: rgb(109, 109, 109);
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 20pt;
+}
+
+.itemBox:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.item {
+  margin-top: 5pt;
+  margin-left: 3pt;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.label_text {
+  margin-left: 12pt;
+  margin-top: 3pt;
+}
+
+.input {
+  width: 60%;
+  margin-left: 10pt;
+  margin-top: 1pt;
+  background-color: transparent;
+  border: none;
+  font-family: "Josefin Sans";
+  font-size: 15pt;
+  color: white;
+}
+
+.input:focus {
+  outline: none;
+}
